@@ -1,0 +1,83 @@
+Script started on 2024-02-04 17:09:28-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="119" LINES="34"]
+[?2004h]0;misha02@misha02: ~/MISHA02/Project 2/SourceFiles[01;32mmisha02@misha02[00m:[01;34m~/MISHA02/Project 2/SourceFiles[00m$ make
+[?2004lasm Echo.s
+lddd Echo.o -o Echo
+asm Hello.s
+lddd Hello.o -o Hello
+kpl HelloWorld
+asm HelloWorld.s
+lddd Runtime.o System.o HelloWorld.o -o HelloWorld
+[?2004h]0;misha02@misha02: ~/MISHA02/Project 2/SourceFiles[01;32mmisha02@misha02[00m:[01;34m~/MISHA02/Project 2/SourceFiles[00m$ ll
+[?2004ltotal 468
+drwxrwxr-x 2 misha02 misha02   4096 Feb  4 17:09 [0m[01;34m.[0m/
+drwxrwxr-x 3 misha02 misha02   4096 Feb  4 17:08 [01;34m..[0m/
+-rwxrwxrwx 1 misha02 misha02 131076 Jan 24 07:38 [01;32mDISK[0m*
+-rw-rw-r-- 1 misha02 misha02   8692 Feb  4 17:09 Echo
+-rw-rw-r-- 1 misha02 misha02    847 Feb  4 17:09 Echo.o
+-rw-rw-r-- 1 misha02 misha02  47865 Feb  4 16:59 echoPrime
+-rw-rw-r-- 1 misha02 misha02     68 Sep 24 22:18 echoPrime.h
+-rw-rw-r-- 1 misha02 misha02    490 Feb  4 16:58 echoPrime.k
+-rw-rw-r-- 1 misha02 misha02   4926 Feb  4 16:59 echoPrime.o
+-rw-rw-r-- 1 misha02 misha02   7107 Feb  4 16:59 echoPrime.s
+-rwxrwxrwx 1 misha02 misha02   3977 Jan 24 07:38 [01;32mEcho.s[0m*
+-rw-rw-r-- 1 misha02 misha02   8672 Feb  4 17:09 Hello
+-rw-rw-r-- 1 misha02 misha02    847 Feb  4 17:09 Hello.o
+-rwxrwxrwx 1 misha02 misha02   2812 Jan 24 07:38 [01;32mHello.s[0m*
+-rw-rw-r-- 1 misha02 misha02  48003 Feb  4 17:09 HelloWorld
+-rwxrwxrwx 1 misha02 misha02     63 Jan 24 07:38 [01;32mHelloWorld.h[0m*
+-rwxrwxrwx 1 misha02 misha02    391 Jan 24 07:39 [01;32mHelloWorld.k[0m*
+-rw-rw-r-- 1 misha02 misha02   5240 Feb  4 17:09 HelloWorld.o
+-rw-rw-r-- 1 misha02 misha02   7937 Feb  4 17:09 HelloWorld.s
+-rwxrwxrwx 1 misha02 misha02    987 Feb  4 16:55 [01;32mmakefile[0m*
+-rw-rw-r-- 1 misha02 misha02      0 Feb  4 17:09 MISHA02_Project2_Capture
+-rw-rw-r-- 1 misha02 misha02  11213 Feb  4 16:56 Runtime.o
+-rw-rw-r-- 1 misha02 misha02  32968 Feb  4 16:53 Runtime.s
+-rwxrwxrwx 1 misha02 misha02   2758 Feb  4 16:54 [01;32mSystem.h[0m*
+-rwxrwxrwx 1 misha02 misha02  11472 Jan 24 07:39 [01;32mSystem.k[0m*
+-rw-rw-r-- 1 misha02 misha02  37012 Feb  4 16:56 System.o
+-rw-rw-r-- 1 misha02 misha02  36833 Feb  4 16:56 System.s
+[?2004h]0;misha02@misha02: ~/MISHA02/Project 2/SourceFiles[01;32mmisha02@misha02[00m:[01;34m~/MISHA02/Project 2/SourceFiles[00m$ blitz -g echoPrime
+[?2004lBeginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Welcome to echoPrime
+q
+q
+****  A 'debug' instruction was encountered  *****
+Done!  The next instruction to execute will be:
+002830: A100004C       jmp     0x00004C		! targetAddr = _Label_13
+
+Entering machine-level debugger...
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> q
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 108538694
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 108538694
+[?2004h]0;misha02@misha02: ~/MISHA02/Project 2/SourceFiles[01;32mmisha02@misha02[00m:[01;34m~/MISHA02/Project 2/SourceFiles[00m$ blitz -g echoPrime
+[?2004lBeginning execution...
+====================  KPL PROGRAM STARTING  ====================
+Welcome to echoPrime
+Hq
+Hq
+Hello World
+Hello World
+How are you?
+How are you?
+^C
+*****  Control-C  *****
+
+BLITZ Emulator Error: Problems with Unix function select
+[?2004h]0;misha02@misha02: ~/MISHA02/Project 2/SourceFiles[01;32mmisha02@misha02[00m:[01;34m~/MISHA02/Project 2/SourceFiles[00m$ exit
+[?2004lexit
+
+Script done on 2024-02-04 17:10:27-05:00 [COMMAND_EXIT_CODE="1"]
