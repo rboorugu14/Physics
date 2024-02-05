@@ -1,0 +1,70 @@
+Script started on 2024-02-05 03:54:57+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="102" LINES="58"]
+]0;seed@seedlab: ~/SourceFiles[01;32mseed@seedlab[00m:[01;34m~/SourceFiles[00m$ make
+kpl System -unsafe
+asm System.s
+kpl HelloWorld
+asm HelloWorld.s
+lddd Runtime.o System.o HelloWorld.o -o HelloWorld
+]0;seed@seedlab: ~/SourceFiles[01;32mseed@seedlab[00m:[01;34m~/SourceFiles[00m$ b[Kmake[2Pllhome/seed/SourceFiles/echoPrime.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l home/seed/SourceFiles/echoPrime.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pkpl home/seed/SourceFiles/echoPrime.h[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kkpl home/seed/SourceFiles/echoPrime[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[Kkpl home/seed/SourceFiles/echoPrime.h[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l home/seed/SourceFiles/echoPrime.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Phome/seed/SourceFiles/echoPrime.s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cll[Kmake[Kblitz -h[Kg echoPrime
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+
+echoPrimerohan
+rohan
+q
+q
+q
+q
+^C
+*****  Control-C  *****
+Done!  The next instruction to execute will be:
+00105C: 88050001       and     r5,0x0001,r0	! decimal: 1, ascii: ".."  
+
+Entering machine-level debugger...
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> quit
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 444785367
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 444785367
+]0;seed@seedlab: ~/SourceFiles[01;32mseed@seedlab[00m:[01;34m~/SourceFiles[00m$ blitz -g echoPrime
+Beginning execution...
+====================  KPL PROGRAM STARTING  ====================
+
+echoPrimeq
+q
+****  A 'debug' instruction was encountered  *****
+Done!  The next instruction to execute will be:
+002848: A100004C       jmp     0x00004C		! targetAddr = _Label_13
+
+Entering machine-level debugger...
+======================================================
+=====                                            =====
+=====         The BLITZ Machine Emulator         =====
+=====                                            =====
+=====  Copyright 2001-2007, Harry H. Porter III  =====
+=====                                            =====
+======================================================
+
+Enter a command at the prompt.  Type 'quit' to exit or 'help' for
+info about commands.
+> quit
+Number of Disk Reads    = 0
+Number of Disk Writes   = 0
+Instructions Executed   = 26654090
+Time Spent Sleeping     = 0
+    Total Elapsed Time  = 26654090
+]0;seed@seedlab: ~/SourceFiles[01;32mseed@seedlab[00m:[01;34m~/SourceFiles[00m$ exit
+exit
+
+Script done on 2024-02-05 03:57:14+00:00 [COMMAND_EXIT_CODE="0"]
